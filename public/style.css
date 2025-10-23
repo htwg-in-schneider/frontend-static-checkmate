@@ -1,0 +1,28 @@
+.img { 
+    /* Entfernt die Lücken (die als Leerzeichen interpretiert werden) */
+    font-size: 0; 
+}
+.img1, .img2, .img3, .img4{
+    width: 24.9%; 
+    flex-direction: row;
+    vertical-align: top;
+    
+    /* Optional: Stellt sicher, dass das Bild ohne Verzerrung die Box ausfüllt und abgeschnitten wird */
+    object-fit: cover; 
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 96px;
+    margin-bottom: 0%;
+
+}
+h2 {
+    text-align: center;
+    margin: 0%;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 32px;
+
+}
