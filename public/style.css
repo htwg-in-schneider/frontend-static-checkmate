@@ -25,7 +25,7 @@ html, body {
   color: #C5BFB3;       /* Schriftfarbe */
   padding: 0;           /* optional: keinen Innenabstand */
   cursor: pointer;      /* Mauszeiger zeigt Hand */
-  font-size: 2px;      /* Schriftgröße anpassen */
+  font-size: 20px;      /* Schriftgröße anpassen */
   transition: color 0.2s; /* sanfter Farbwechsel */
   font-weight: bold;
 }
@@ -85,7 +85,9 @@ h2 {
     justify-content: center; /* Zentriert die Inhalte horizontal */
     align-items: center; /* Optional: Zentriert die Inhalte vertikal (falls der Container eine Höhe hat) */
 }
-
+#google_translate_element {
+  display: none; /* Versteckt das Google Widget, da du den Button nutzt */
+}
 #register {
     
     padding: 15px 30px; /* Vertikaler und horizontaler Innenabstand */
