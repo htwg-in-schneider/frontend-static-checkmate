@@ -81,6 +81,8 @@ html, body {
   padding: 15px 35px;
   font-size: 1.1rem;
   border-radius: 50px;
+  margin-top: 0%;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -374,6 +376,11 @@ details[open] > summary .chevron {
   .right-Side { gap: 12px; }
   #lang { font-size: 16px; }
   #sign { font-size: 18px; padding: 6px 10px; }
+  #register {  padding: 7px 20px; font-size: 18px; }
+
+  /* App Button kleiner*/ 
+ 
+
 
   /* Akkordeon */
   .accordion-row > summary {
