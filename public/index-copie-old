@@ -1,0 +1,24 @@
+<body>
+<div class = "header">
+    <img class="logo" src="img/logoheader2.jpg">
+    <div class = "right-Side">
+    <button id="lang">Languange</button>
+    <button id="sign">Log In</button>
+    </div>
+</div>    
+
+<div class="img">
+    <img class="img1" src="img/webtech1.jpg" alt="b1" >
+    <img class="img2" src="img/webtech4.jpg" alt="b2" >
+    <img class="img3" src="img/webtech2.jpg" alt="b3" >
+    <img class="img4" src="img/webtech3.jpg" alt="b4" >
+</div>
+
+<h1>You're not alone</h1>
+<h2>Finde deinen Study Partner fürs Studium</h2>
+
+<div class="button-container">
+    <button id="register">Jetzt Starten</button>
+</div>
+</body>
+</html> 
