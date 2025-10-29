@@ -8,15 +8,28 @@ html, body {
   display: flex;           /* Elemente nebeneinander */
   justify-content: space-between; /* Platz zwischen links und rechts */
   align-items: center;     /* vertikal zentrieren */
-  padding: 0 20px;
+  flex-wrap: nowrap;             /* kein Zeilenumbruch erlaubt */
+  width: 100%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  overflow: hidden;              /* verhindert horizontales Scrollen */
 }
+ 
+
 .right-Side {
   display: flex;
-  gap: 30px; /* Abstand zwischen den Buttons */
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;                     /* Desktop-Abstand */
+  flex-shrink: 0;
+  white-space: nowrap;
 }
+
 .logo {
-    width: 680px;
-    height: 95px;
+  width: 680px;                  /* Desktopgröße */
+  height: auto;
+  flex-shrink: 1;                /* darf schrumpfen, wenn zu wenig Platz */
+  max-width: 100%;               /* verhindert, dass es den Viewport sprengt */
 }
 
 #lang {
@@ -25,10 +38,12 @@ html, body {
   color: #C5BFB3;       /* Schriftfarbe */
   padding: 0;           /* optional: keinen Innenabstand */
   cursor: pointer;      /* Mauszeiger zeigt Hand */
-  font-size: 2px;      /* Schriftgröße anpassen */
-  transition: color 0.2s; /* sanfter Farbwechsel */
-  font-weight: bold;
+  font-size: 20px;      /* Schriftgröße anpassen */
+  padding: 4px 6px;
+  line-height: 1.2;
+  transition: color 0.2s ease;
 }
+
 
 #sign {
     padding: 7px 14px; /* Vertikaler und horizontaler Innenabstand */
@@ -85,7 +100,9 @@ h2 {
     justify-content: center; /* Zentriert die Inhalte horizontal */
     align-items: center; /* Optional: Zentriert die Inhalte vertikal (falls der Container eine Höhe hat) */
 }
-
+#google_translate_element {
+  display: none; /* Versteckt das Google Widget, da du den Button nutzt */
+}
 #register {
     
     padding: 15px 30px; /* Vertikaler und horizontaler Innenabstand */
@@ -106,4 +123,39 @@ h2 {
 
 button:active {
   filter: brightness(90%); /* dunkler beim Drücken */
+}
+
+@media (max-width: 992px) {
+  .logo {
+    width: 55vw;                 /* Logo schrumpft fließend */
+  }
+  .right-Side {
+    gap: 18px;                   /* weniger Abstand */
+  }
+  #lang {
+    font-size: 18px;
+  }
+  #sign {
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 6px 12px;
+  }
+  .logo {
+    width: 45vw;                 /* kleiner auf schmalen Handys */
+  }
+  .right-Side {
+    gap: 12px;
+  }
+  #lang {
+    font-size: 16px;
+  }
+  #sign {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
 }
