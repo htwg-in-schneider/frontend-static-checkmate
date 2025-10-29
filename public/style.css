@@ -481,11 +481,7 @@ details[open] > summary .chevron {
     .getapp-text p {
       display: none;
     }
-  }
-
-
-
-
+  
   /* Footer stapeln */
   .footer-content {
     flex-direction: column;
@@ -495,7 +491,7 @@ details[open] > summary .chevron {
     flex-direction: column;
     gap: 10px;
   }
-
+}
 
 /* ========== Tablets (601px – 992px) ========== */
 @media (min-width: 601px) and (max-width: 992px) {
