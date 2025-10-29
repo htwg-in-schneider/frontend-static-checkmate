@@ -1,0 +1,109 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.header {
+  display: flex;           /* Elemente nebeneinander */
+  justify-content: space-between; /* Platz zwischen links und rechts */
+  align-items: center;     /* vertikal zentrieren */
+  padding: 0 20px;
+}
+.right-Side {
+  display: flex;
+  gap: 30px; /* Abstand zwischen den Buttons */
+}
+.logo {
+    width: 680px;
+    height: 95px;
+}
+
+#lang {
+  background: none;     /* kein Hintergrund */
+  border: none;         /* kein Rahmen */
+  color: #C5BFB3;       /* Schriftfarbe */
+  padding: 0;           /* optional: keinen Innenabstand */
+  cursor: pointer;      /* Mauszeiger zeigt Hand */
+  font-size: 2px;      /* Schriftgröße anpassen */
+  transition: color 0.2s; /* sanfter Farbwechsel */
+  font-weight: bold;
+}
+
+#sign {
+    padding: 7px 14px; /* Vertikaler und horizontaler Innenabstand */
+    border: none; /* Entfernt den Standard-Rahmen des Browsers */
+    border-radius: 45px; /* Leicht abgerundete Ecken */
+   
+    background-color: #C5BFB3; /* Beispiel: Ein freundliches Grün */
+    color: white; /* Textfarbe auf Weiß setzen */
+    
+    font-family: sans-serif; /* Deine gewählte Schriftart */
+    font-size: 25px; 
+    font-weight:lighter; /* Macht den Text stärker */
+    
+    /* **Verhalten** */
+    transition: background-color 0.3s ease; /* Ermöglicht eine sanfte Farbänderung */
+}
+.img { 
+    /* Entfernt die Lücken (die als Leerzeichen interpretiert werden) */
+    font-size: 0; 
+    /* Bluuren für einen leichteren Übergang*/
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 20%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+}
+.img1, .img2, .img3, .img4 {
+    width: 25%; 
+    flex: 1;
+    margin: 0;
+    /* Optional: Stellt sicher, dass das Bild ohne Verzerrung die Box ausfüllt und abgeschnitten wird */
+    object-fit: cover;                
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'Lora', sans-serif; 
+    font-size: 85px;
+    margin-bottom: 0%;
+    font-weight: 700;
+
+}
+h2 {
+    text-align: center;
+    margin: 0%;
+    font-family: 'Lora', sans-serif; 
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.button-container {
+    margin-top: 1.5%;
+    display: flex; /* Aktiviert Flexbox */
+    justify-content: center; /* Zentriert die Inhalte horizontal */
+    align-items: center; /* Optional: Zentriert die Inhalte vertikal (falls der Container eine Höhe hat) */
+}
+
+#register {
+    
+    padding: 15px 30px; /* Vertikaler und horizontaler Innenabstand */
+    border: none; /* Entfernt den Standard-Rahmen des Browsers */
+    border-radius: 50px; /* Leicht abgerundete Ecken */
+    
+    background-color: #BDCFAA; /* Beispiel: Ein freundliches Grün */
+    color: white; /* Textfarbe auf Weiß setzen */
+    
+    font-family: Arial, sans-serif; /* Deine gewählte Schriftart */
+    font-size: 18px; 
+    font-weight: bold; /* Macht den Text stärker */
+    
+    /* **Verhalten** */
+    cursor: pointer; /* Zeigt eine Hand, wenn man über den Button fährt (wichtig!) */
+    transition: background-color 0.3s ease; /* Ermöglicht eine sanfte Farbänderung */
+}
+
+button:active {
+  filter: brightness(90%); /* dunkler beim Drücken */
+}
